@@ -6,25 +6,110 @@
     <title>Rinterio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.3.0/dist/full.css" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Matemasie&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <!-- Navbar -->
-    <nav class="bg-white shadow-md">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <div>
-                <a href="#" class="text-gray-800 text-xl font-bold">Rinterio</a>
-            </div>
-            <div class="flex space-x-4">
-                <a href="#" class="text-gray-600 hover:text-blue-600">Home</a>
-                <a href="#" class="text-gray-600 hover:text-blue-600">Services</a>
-                <a href="#" class="text-gray-600 hover:text-blue-600">Portfolio</a>
-                <a href="#" class="text-gray-600 hover:text-blue-600">Blogs</a>
-                <a href="#" class="text-gray-600 hover:text-blue-600">Contact Us</a>
-                <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500">Book Consult</button>
-            </div>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <header>
+
+        <!-- Navbar -->
+     <!-- Navbar Section Started Here -->
+     <nav class="px-5 py-8 md:px-8 md:py-6 lg:px-20 lg:py-12 flex items-center justify-between">
+
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+
+          <!-- icon -->
+          <button class="btn btn-circle bg-lime-300 border-none hover:bg-lime-400">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="black" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+          </button>
+
+          
+          <h1 class="text-neutral-800 font-bold text-[28px] lg:text-4xl">Rinterio</h1>
         </div>
-    </nav>
+
+        <!-- List -->
+        <div class="hidden xl:block">
+          <ul class="flex gap-9 text-neutral-500">
+            <li><a href="#home" class="text-neutral-600 font-black">Home</a></li>
+            <li><a href="#service" class="hover:text-neutral-600 hover:font-black">Service</a></li>
+            <li><a href="#portfolio" class="hover:text-neutral-600 hover:font-black">Portfolio</a></li>
+            <li><a href="#blogs" class="hover:text-neutral-600 hover:font-black">Blogs</a></li>
+            <li><a href="#contact-us" class="hover:text-neutral-600 hover:font-black">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- btn Nav -->
+        <div class="flex items-center gap-4">
+          <div class="hidden md:flex items-center gap-4">
+          <!--btn Search -->
+          <button class="btn btn-ghost btn-circle bg-white border-2 border-neutral-200 text-neutral-500 hover:bg-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+            
+          </button>
+
+          <!-- btn Cart -->
+          <button class="btn btn-ghost btn-circle bg-white border-2 border-neutral-200 text-neutral-500 hover:bg-white">
+           
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+            </svg>
+            
+
+          </button>
+
+          <!-- Book btn -->
+          <div class="rounded-full bg-lime-300 border-none py-3 px-3 space-x-3 pl-6"> <span class="text-xl font-black text-neutral-800">Book Consult</span>
+            <button class="btn btn-circle bg-neutral-800 border-none hover:bg-neutral-900 p">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-opacity="1.000000" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </button>
+          </div>
+          </div>
+        <!-- Drop-Down -->
+
+          <div class="dropdown dropdown-left xl:hidden">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle bg-white border-2 border-neutral-200 text-neutral-500 hover:bg-white">
+   
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+            </svg>
+            
+          </div>
+          <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+            <li><a href="#home" class="text-neutral-600 font-black">Home</a></li>
+            <li><a href="#service" class="hover:text-neutral-600 hover:font-black">Service</a></li>
+            <li><a href="#portfolio" class="hover:text-neutral-600 hover:font-black">Portfolio</a></li>
+            <li><a href="#blogs" class="hover:text-neutral-600 hover:font-black">Blogs</a></li>
+            <li><a href="#contact-us" class="hover:text-neutral-600 hover:font-black">Contact Us</a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+      </nav>
+
+     
+
+
+
+    </header>
+    
 
    
     <!-- Footer -->
